@@ -1,28 +1,52 @@
 <template>
+  <AppHeader />
   <div>
-    <section class="relative min-h-[80vh] flex items-center justify-center bg-[#f0f7ff] overflow-hidden px-8">
-      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-5xl lg:text-7xl font-extrabold text-[#0a3d62] leading-tight">
-            All Your HR <br />
-            Needs—In One <br />
-            <span class="text-[#0a3d62]">Smart Kit.</span>
-          </h1>
-          <p class="text-xl text-gray-600 font-medium">
-            Faster, Smarter, Lower Cost - All in One <br />
-            Platform Powered by AI.
-          </p>
-          <div class="flex items-center gap-6">
-            <button class="bg-[#ef4444] hover:bg-red-600 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg">
-              Get Started
-            </button>
-            <a href="#" class="text-[#0a3d62] font-semibold border-b-2 border-transparent hover:border-[#0a3d62] pb-1">
-              See what's inside
-            </a>
-          </div>
+    <section
+    class="relative min-h-[80vh] flex items-center bg-[#f0f7ff] overflow-hidden px-8"
+  >
+    <div
+      class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <div class="space-y-6">
+        <h1
+          class="text-5xl lg:text-7xl font-extrabold text-[#0a3d62] leading-tight"
+        >
+          All Your HR <br />
+          Needs—In One <br />
+          <span class="text-[#0a3d62]">Smart Kit.</span>
+        </h1>
+
+        <p class="text-xl text-gray-600 font-medium">
+          Faster, Smarter, Lower Cost - All in One <br />
+          Platform Powered by AI.
+        </p>
+
+        <div class="flex items-center gap-6">
+          <button
+            class="bg-[#ef4444] hover:bg-red-600 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg"
+          >
+            Get Started
+          </button>
+
+          <a
+            href="#"
+            class="text-[#0a3d62] font-semibold border-b-2 border-transparent hover:border-[#0a3d62] pb-1"
+          >
+            See what's inside
+          </a>
         </div>
       </div>
-    </section>
+
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src=""
+          alt="HR Toolkit"
+          class="w-full max-w-[650px] object-contain"
+        />
+      </div>
+
+    </div>
+  </section>
 
   <section class="py-16 bg-white px-8">
   ​    <div class="container mx-auto">
@@ -42,14 +66,27 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-3 mb-12">
-      <button class="bg-[#db4444] text-white px-6 py-1.5 rounded-full text-sm font-bold">All Category</button>
-      <button class="border border-black text-black px-8 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100">SOP</button>
-      <button class="border border-black text-black px-8 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100">Form</button>
-      <button class="border border-black text-black px-8 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100">KPI Template</button>
-      <button class="border border-black text-black px-8 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100">Contract</button>
-    </div>
+   <div id="category-container" class="flex flex-wrap gap-3 mb-12">
+  <button class="category-btn active px-6 py-1.5 rounded-full text-sm font-bold border border-black hover:bg-red-500 hover:text-white hover:border-red-500">
+    All Category
+  </button>
 
+  <button class="category-btn px-8 py-1.5 rounded-full text-sm font-bold border border-black hover:bg-red-500 hover:text-white hover:border-red-500">
+    SOP
+  </button>
+
+  <button class="category-btn px-8 py-1.5 rounded-full text-sm font-bold border border-black hover:bg-red-500 hover:text-white hover:border-red-500">
+    Form
+  </button>
+
+  <button class="category-btn px-8 py-1.5 rounded-full text-sm font-bold border border-black hover:bg-red-500 hover:text-white hover:border-red-500">
+    KPI Template
+  </button>
+
+  <button class="category-btn px-8 py-1.5 rounded-full text-sm font-bold border border-black hover:bg-red-500 hover:text-white hover:border-red-500">
+    Contract
+  </button>
+</div>
     <h2 class="text-2xl font-bold text-black mb-8">All Category</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -225,8 +262,95 @@
         See More Template
       </button>
     </div>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 p-8 bg-gray-50 min-h-screen font-sans">
+    
+    <div class="w-full max-w-sm p-8 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-bold text-slate-800 mb-4">Pay Per Download</h3>
+        <div class="mb-2">
+          <span class="text-gray-500">from</span>
+          <span class="text-3xl font-bold text-slate-900 ml-2">$9.99</span>
+          <span class="text-gray-500 mx-1 text-xl">to</span>
+          <span class="text-3xl font-bold text-slate-900">$149.99</span>
+        </div>
+        <p class="text-xs text-gray-400 font-semibold italic">***VAT Included</p>
+        
+        <ul class="mt-8 space-y-4 text-sm text-gray-700">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 border border-gray-400 rounded-full flex items-center justify-center">✓</span>
+            <span>Pay Per Download — no hiring plan required</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 border border-gray-400 rounded-full flex items-center justify-center">✓</span>
+            <span>KPI Template for 150 USD / Form</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-full max-w-sm bg-white border-4 border-[#0c344b] rounded-[210] shadow-2xl scale-105 z-10 overflow-hidden h-[550px] flex flex-col">
+      <div class="bg-[#0c344b] h-8 w-full"></div>
+      <div class="p-8 flex flex-col justify-between flex-grow">
+        <div>
+          <h3 class="text-lg font-medium text-gray-600 mb-2">Bundle Plan</h3>
+          <h2 class="text-6xl font-bold text-slate-900 mb-10">Free</h2>
+          
+          <ul class="space-y-6 text-sm text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 flex-shrink-0 w-5 h-5 border-2 border-emerald-500 text-emerald-500 rounded-full flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span>Free bundle with annually hiring billing plan</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 flex-shrink-0 w-5 h-5 border-2 border-emerald-500 text-emerald-500 rounded-full flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span>Download 3 editable forms/month</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 flex-shrink-0 w-5 h-5 border-2 border-emerald-500 text-emerald-500 rounded-full flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span>Access Free KPI Template</span>
+            </li>
+          </ul>
+        </div>
+        
+        <button class="w-full bg-[#0c344b] text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition-colors">
+          Subscribe Now
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full max-w-sm p-8 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-bold text-slate-800 mb-4">Adds - On Plan</h3>
+        <div class="mb-2">
+          <span class="text-4xl font-bold text-slate-900">$149.99</span>
+          <span class="text-gray-500 text-lg">/year</span>
+        </div>
+        <p class="text-xs text-gray-400 font-semibold italic">***VAT Included</p>
+        
+        <ul class="mt-8 space-y-4 text-sm text-gray-700">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 border border-gray-400 rounded-full flex items-center justify-center">✓</span>
+            <span>Free bundle with annually hiring billing plan</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 border border-gray-400 rounded-full flex items-center justify-center">✓</span>
+            <span>Download 3 editable forms/month</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 border border-gray-400 rounded-full flex items-center justify-center">✓</span>
+            <span>Access Free KPI Template</span>
+          </li>
+        </ul>
+      </div>
+      
+      <button class="w-full border border-gray-300 py-4 rounded-xl font-medium text-slate-800 hover:bg-gray-50 transition-colors">
+        Purchase Now
+      </button>
+    </div>
+
   </div>
-</section>
   </div>
   
+</section>
+  </div>
+  <Appfooter  />
 </template>
