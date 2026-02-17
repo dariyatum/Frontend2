@@ -603,6 +603,7 @@
     </section>
 
   </main>
+  <AppFooter />
 </template>
 
 <script setup>
