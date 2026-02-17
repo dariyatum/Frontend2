@@ -66,7 +66,7 @@
         both candidates and companies.
       </p>
 
-      <div class="space-y-4 text-sm sm:text-base lg:text-lg font-medium font-robotoCondensed text-justify px-[20px]">
+      <div class="space-y-4 text-sm sm:text-base lg:text-lg font-medium font-robotoCondensed text-justify px-[30px]">
 
         <p><strong>Accessible for Everyone </strong> Apply from anywhere and connect with companies without geographical limits.</p>
 
@@ -88,7 +88,7 @@
       </p>
     </div>
 
-   
+
     <div class="flex justify-center">
       <img
         src="../assets/css/img/1.webp"
@@ -101,9 +101,70 @@
 
 </section>
 
- <section class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-12 sm:py-16 rounded-xl">
+<section class="max-w-7xl mx-auto px-6 py-16">
+
+  <div class="max-w-4xl  text-lefl">
+
+
+    <div class="flex justify-lefl mb-6">
+      <img
+        src="../assets/css/img/mis.png"
+        alt="Employer Avatar"
+        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-lg"
+      >
+    </div>
+
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
+      Message for Employer
+    </h2>
+
+
+    <p class=" text-[20px] text-justify font-medium leading-relaxed">
+      Our hiring technology solution is designed to help organizations better understand
+      job applicants’ personality styles, motivated skills, burnout risks, and career values
+      by integrating a career-matching test into the recruitment process.
+
+      This results-oriented approach enables organizations to make more informed decisions,
+      minimize hiring mistakes, and ensure efficient staff placement through our built-in smart functions.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class=" py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-6xl m-auto text-right">
+
     
- </section>
+    <div class="flex justify-around mb-6">
+      <img 
+        src="../assets/css/img/emply.png" 
+        alt="Employee Avatar"
+        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-lg"
+      >
+    </div>
+
+   
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center">
+      Message for Employee
+    </h2>
+
+    
+    <p class=" text-[20px] font-medium leading-relaxed text-justify">
+      At Workingna.com, our mission is to connect job seekers with ideal career opportunities 
+      through advanced recruitment technology. We are committed to helping every applicant 
+      increase their chances of being shortlisted and successfully hired. 
+
+      Today, more than 100,000 professional profiles stay connected with new job opportunities 
+      every day through our mobile application and website.
+    </p>
+
+  </div>
+
+</section>
+
 
 
 
