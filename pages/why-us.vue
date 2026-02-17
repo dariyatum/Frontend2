@@ -19,7 +19,7 @@
         <div class="flex justify-center md:justify-start mb-6">
          
           <div class="text-red-500 text-5xl font-bold">
-            information
+            Information
           </div>
         </div>
 
@@ -50,36 +50,62 @@
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto px-6 py-16 bg-[#DBDBDB] rounded-[10px]">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+ <section class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-12 sm:py-16 bg-[#DBDBDB] rounded-xl">
 
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+   
+    <div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-500 mb-6 text-center md:text-left px-[20px]">
+        Why Choose Us
+      </h1>
+
+      <p class="text-base sm:text-lg lg:text-xl font-semibold font-robotoCondensed text-justify mb-6 px-[20px]">
+        Choosing PeopleCore Solutions means choosing a platform that puts people first.
+        We go beyond traditional recruitment tools to create a system that truly benefits
+        both candidates and companies.
+      </p>
+
+      <div class="space-y-4 text-sm sm:text-base lg:text-lg font-medium font-robotoCondensed text-justify px-[20px]">
+
+        <p><strong>Accessible for Everyone </strong> Apply from anywhere and connect with companies without geographical limits.</p>
+
+        <p><strong>Time-Saving </strong> Streamlined processes reduce time spent searching, applying, and scheduling interviews.</p>
+
+        <p><strong>Cost-Effective </strong> Candidates save travel costs, and companies reduce recruitment expenses.</p>
+
+        <p><strong>User-Friendly Experience </strong> Our platform is intuitive and easy to navigate.</p>
+
+        <p><strong>Reliable and Transparent </strong> Digital handling ensures accuracy and accountability.</p>
+
+        <p><strong>Meaningful Connections </strong> We match the right talent with the right opportunity.</p>
+
+      </div>
+
+      <p class="mt-8 text-sm sm:text-base lg:text-lg font-semibold font-robotoCondensed text-justify px-[20px]">
+        At PeopleCore Solutions, we don’t just connect people to jobs  we create opportunities,
+        build careers, and help companies grow with the right team.
+      </p>
     </div>
-    <h1 class="text-6xl font-bold text-red-500 mb-6 ">
-            Why Choose Us
-        </h1>
-        
-            <span class="text-[30px] font-bold font-robotoCondensed text-justify">Choosing PeopleCore Solutions means choosing a platform that puts people first.
-            We go beyond traditional recruitment tools to create a system that truly benefits both candidates and companies.
-            Here’s why we stand out:  <br> </span>
-            <br>
-        <p class="text-[25px] font-[500] font-robotoCondensed text-indent: 20px text-justify">
-        .Accessible for Everyone – Candidates can apply from anywhere, and companies can reach a wide range of talented professionals without geographical limits. <br>
 
-        .Time-Saving – Streamlined processes reduce the time spent on searching, applying, and scheduling interviews. <br>
+   
+    <div class="flex justify-center">
+      <img
+        src="../assets/css/img/1.webp"
+        alt="Recruitment illustration"
+        class="w-full max-w-sm sm:max-w-md lg:max-w-lg rounded-2xl shadow-xl object-cover"
+      >
+    </div>
 
-        .Cost-Effective – Candidates no longer need to spend unnecessary money traveling for interviews, and companies save on recruitment costs. <br>
+  </div>
 
-        .User-Friendly Experience – Our platform is designed to be intuitive and easy to navigate for all users. <br>
+</section>
 
-        .Reliable and Transparent – Every job listing, CV submission, and interview schedule is handled digitally, providing accuracy and accountability. <br>
+ <section class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-12 sm:py-16 rounded-xl">
+    
+ </section>
 
-        .Meaningful Connections – We help build real opportunities, ensuring that candidates find the right jobs and companies find the right talent. <br>
-        <br>
 
-    <h1 class="text-[30px] font-bold font-robotoCondensed text-justify">At PeopleCore Solutions, we don’t just connect people to jobs – we create opportunities, build careers, and help companies grow with the right team. By choosing us, you choose efficiency, simplicity, and success in recruitment.</h1>
-        </p>
-
-  </section>
 
 </body>
 </template>
