@@ -20,7 +20,7 @@
       
       <div class="text-center mb-8">
         <h2 class="text-xl font-bold text-slate-800">
-          Sign up to WORKINGNA as <span class="text-[#e25845]">Recruiter</span>
+          People Core <span class="text-[#e25845]">Recruiter</span>
         </h2>
         <p class="text-sm text-slate-500 mt-2">
           Read more details about <a href="#" class="text-[#e25845] hover:underline">Recruiter Account</a>
@@ -72,11 +72,11 @@
         <div class="space-y-3 pt-2">
           <label class="flex items-start gap-3 cursor-pointer">
             <input type="checkbox" class="mt-1 rounded border-slate-300 text-[#e25845] focus:ring-[#e25845]" />
-            <span class="text-xs text-slate-600">Yes! Send me genuinely useful emails every now and then to help me get the most out of WorkingNa.</span>
+            <span class="text-xs text-slate-600">Yes! Send me genuinely useful emails every now and then to help me get the most out of People Core.</span>
           </label>
           <label class="flex items-start gap-3 cursor-pointer">
             <input type="checkbox" class="mt-1 rounded border-slate-300 text-[#e25845] focus:ring-[#e25845]" />
-            <span class="text-xs text-slate-600">Yes, I understand and agree to the WORKINGNA <a href="#" class="text-[#e25845] hover:underline">Privacy Policy</a></span>
+            <span class="text-xs text-slate-600">Yes, I understand and agree to the People Core<a href="#" class="text-[#e25845] hover:underline">Privacy Policy</a></span>
           </label>
         </div>
 

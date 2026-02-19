@@ -25,7 +25,7 @@
     <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-lg">
 
       <h2 class="text-xl sm:text-2xl font-semibold text-center mb-6">
-        Sign In to WORKINGNA
+        People Core
       </h2>
 
       
@@ -64,8 +64,8 @@
           <input type="checkbox" class="accent-red-500">
           <span>Remember</span>
         </label>
-        <a href="forgive-pressword.vue" class="text-red-500 hover:underline">
-          Forgot Password?
+        <a href="" class="text-red-500 hover:underline">
+          <nuxt-link to="/forgive-pressword">Forgot Password?</nuxt-link>
         </a>
       </div>
 
@@ -84,10 +84,10 @@
       </div>
 
       
-      <a href="create-account.vue"><button class="w-full py-2 border border-red-400 text-red-500 rounded-full hover:bg-red-50 transition">
-        Create New Account
+        <button class="w-full py-2 border border-red-400 text-red-500 rounded-full hover:bg-red-50 transition">
+        <nuxt-link to="/create-account">Create New Account</nuxt-link>
       </button>
-      </a>
+     
 
     </div>
 

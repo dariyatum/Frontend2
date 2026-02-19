@@ -38,7 +38,7 @@
       </div>
 
       <div class="flex justify-between items-center mt-6">
-        <a href="recruit-talent.vue"><button class="text-red-500">Cancel</button></a>
+        <button class="text-red-500"><nuxt-link to="/recruit-talent">Cancel</nuxt-link></button>
 
         <a href="#"><button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">
           Send Verify Code
