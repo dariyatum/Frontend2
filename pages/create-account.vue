@@ -80,9 +80,10 @@
           </label>
         </div>
 
-        <button type="submit" class="w-full bg-[#e25845] hover:bg-[#cf4a38] text-white font-semibold py-3 rounded-xl mt-6 transition shadow-md shadow-orange-100">
+        <a href="#"><button type="submit" class="w-full bg-[#e25845] hover:bg-[#cf4a38] text-white font-semibold py-3 rounded-xl mt-6 transition shadow-md shadow-orange-100">
           Create My Account
         </button>
+        </a>
       </form>
     </div>
   </div>
