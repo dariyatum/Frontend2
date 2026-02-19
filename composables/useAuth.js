@@ -1,28 +1,23 @@
-export const useAuth = () => {
-  const user = useState('user', () => null)
+// composables/useAuth.js
+import { ref } from 'vue'
 
-  const register = (name, email, password) => {
-    if (name && email && password) {
-      user.value = { name, email }
-      return true
-    }
-    return false
-  }
+export function useAuth() {
+  const currentUser = ref(JSON.parse(localStorage.getItem('currentUser')) || null)
 
-  const login = (email, password) => {
-    if (email && password) {
-      user.value = {
-        name: email.split('@')[0],
-        email
-      }
-      return true
-    }
-    return false
+  const register = (name, email, password, userType = 'candidate') => {
+    const user = { name, email, password, userType }
+
+    // Save in localStorage
+    localStorage.setItem('currentUser', JSON.stringify(user))
+    currentUser.value = user
+
+    return true
   }
 
   const logout = () => {
-    user.value = null
+    localStorage.removeItem('currentUser')
+    currentUser.value = null
   }
 
-  return { user, register, login, logout }
+  return { currentUser, register, logout }
 }
