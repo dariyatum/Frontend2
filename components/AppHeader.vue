@@ -4,7 +4,7 @@
 
       <!-- Logo -->
       <NuxtLink to="/" class="text-2xl font-bold text-indigo-600 tracking-wide">
-        <img src="https://i.ibb.co/5h8vwymK/Chat-GPT-Image-Feb-16-2026-01-32-04-PM-2.png" alt="" class="object-cover w-10 h-10">
+        <img src="https://i.ibb.co/5h8vwymK/Chat-GPT-Image-Feb-16-2026-01-32-04-PM-2.png" alt="" class="object-contain w-40 h-20">
 
       </NuxtLink>
 
@@ -14,19 +14,35 @@
           v-for="link in links"
           :key="link.name"
           :to="link.path"
-          class="relative text-gray-700 font-medium hover:text-indigo-600 transition duration-300"
-          active-class="text-indigo-600"
+          class="relative text-gray-700 font-medium hover:text-red-600 transition duration-300"
+          active-class="text-red-600"
         >
           {{ link.name }}
         </NuxtLink>
 
-        <!-- CTA Button -->
-        <NuxtLink
-          to="/register"
-          class="bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition duration-300 shadow-md hover:shadow-lg"
-        >
-          Get Started
-        </NuxtLink>
+     <!-- CTA / Auth Section -->
+<div v-if="!user">
+  <NuxtLink
+    to="/register"
+    class="bg-red-600 text-white px-5 py-2 rounded-xl hover:bg-red-700 transition duration-300 shadow-md hover:shadow-lg"
+  >
+    Get Started
+  </NuxtLink>
+</div>
+
+<div v-else class="flex items-center gap-4">
+  <span class="text-gray-700 font-medium">
+    Hi, {{ user.name }}
+  </span>
+
+  <button
+    @click="logout"
+    class="text-red-600 font-medium hover:underline"
+  >
+    Logout
+  </button>
+</div>
+
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -79,10 +95,13 @@ const isOpen = ref(false)
 
 const links = [
   { name: 'Home', path: '/' },
-  { name: 'Jobs', path: '/jobs' },
-  { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'Recruit Talent', path: '/recruit-talent' },
+  { name: 'Find Jobs', path: '/find-jobs' },
+  { name: 'HR Toolkit', path: '/hr-toolkit' },
+  { name: 'Why Us?', path: '/why-us' }
+
 ]
+
 </script>
 
 <style scoped>
