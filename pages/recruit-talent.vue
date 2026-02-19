@@ -64,7 +64,7 @@
           <input type="checkbox" class="accent-red-500">
           <span>Remember</span>
         </label>
-        <a href="#" class="text-red-500 hover:underline">
+        <a href="forgive-pressword.vue" class="text-red-500 hover:underline">
           Forgot Password?
         </a>
       </div>
@@ -84,9 +84,10 @@
       </div>
 
       
-      <button class="w-full py-2 border border-red-400 text-red-500 rounded-full hover:bg-red-50 transition">
+      <a href="create-account.vue"><button class="w-full py-2 border border-red-400 text-red-500 rounded-full hover:bg-red-50 transition">
         Create New Account
       </button>
+      </a>
 
     </div>
 
