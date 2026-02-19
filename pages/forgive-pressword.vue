@@ -1,55 +1,53 @@
 <template>
-    <section class="min-h-screen flex flex-col md:flex-row bg-gray-100">
+<section class="min-h-screen grid md:grid-cols-2">
 
-  
-  <div class="md:w-1/2 flex flex-col justify-center px-8 lg:px-16 py-12 bg-[#E5E7EB]">
+ 
+  <div class="bg-[#EDEDED] flex flex-col justify-between p-12">
     
-    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F3D57] mb-10">
+    <h1 class="text-4xl font-bold text-[#0B2C3D] max-w-md">
       Take the first step toward a smarter talent strategy
     </h1>
 
-    <div class="flex justify-center md:justify-start">
-      <img 
-        src="../assets/css/img/Artboard 1.webp"
-        alt="Recruitment Illustration"
-        class="w-64 sm:w-72 lg:w-80 object-contain"
-      >
+    <div class="flex justify-center items-end">
+      <img src="../assets/css/img/Artboard 1.webp" alt="Illustration" class="w-72">
     </div>
 
   </div>
 
 
   
-  <div class="md:w-1/2 flex items-center justify-center px-6 py-12">
+  <div class="flex items-center justify-center bg-white">
 
-    <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-lg">
+    <div class="w-full max-w-md p-8 border rounded-xl shadow-sm">
 
-      <h2 class="text-xl sm:text-2xl font-semibold text-center mb-6">
-        Sign In to WORKINGNA
+      <h2 class="text-2xl font-semibold text-center mb-2">
+        Update your password
       </h2>
 
-      
-      
+      <p class="text-gray-500 text-center mb-6">
+        Enter your email address to reset your password.
+      </p>
 
-      
       <div class="mb-4">
-        <label class="block mb-1 text-sm font-medium">Email*</label>
+        <label class="block mb-2 text-sm font-medium">Email</label>
         <input 
           type="email"
           placeholder="name@company.com"
           class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
-        >
+        />
       </div>
-      <div class="flex justify-between mb-6">
-        <a href=""></a><button class="w-1/2 py-2 border rounded-full mr-2 hover:bg-gray-100 transition">
-          Cencel
-        </button>
-        <button class="w-1/2 py-2 border border-red-400 text-red-500 rounded-full ml-2 hover:bg-red-50 transition">
+
+      <div class="flex justify-between items-center mt-6">
+        <a href="recruit-talent.vue"><button class="text-red-500">Cancel</button></a>
+
+        <a href="#"><button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">
           Send Verify Code
-        </button>
+        </button></a>
       </div>
+
     </div>
-    
-</div>
+
+  </div>
+
 </section>
 </template>
